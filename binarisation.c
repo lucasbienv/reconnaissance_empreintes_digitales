@@ -53,7 +53,7 @@ void binarisation(char* f_sortie, char* f_source, int h, int w){
   printf("ok\n");
   bmp_img* img_source = malloc(sizeof(bmp_img));
   bmp_img* img_sortie = malloc(sizeof(bmp_img));
-  bmp_img_init_df(img_sortie, h,w);
+  bmp_img_init_df(img_sortie, w,h);
   bmp_img_read(img_source, f_source);
 
   int* histo = histogramme(img_source);
